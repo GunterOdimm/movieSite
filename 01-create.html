@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>jQuery Test</title>
+    <style>
+        ul{ padding: 0; margin: 0; list-style: none; }
+        li { padding: 5px 10px; cursor: pointer;
+            border-bottom: 1px dotted #d5d5d5; }
+        li:hover{ background-color: #ff0; }
+        li:first-child{ border-top: 1px dotted #d5d5d5; }
+    </style>
+</head>
+<body>
+    <button type="button" id="before">앞에추가</button>
+    <button type="button" id="after">뒤에추가</button>
+    <button type="button" id="clear">전체삭제</button>
+    <hr>
+    <ul id="list"></ul>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#before").click(function(){
+                var li = $("<li>").addClass("item before").html(new Date());
+                $("#list").prepend(li);
+            });
+
+            $("#after").click(function(){
+                var li = $("<li>").addClass("item after").html(new Date());
+                $("#list").append(li);
+            });
+
+            $("#clear").click(function(){
+                $("#list").empty();
+            });
+
+            $(document).on('click', '.item', function(e){
+                $(this).remove();
+            });
+
+        });
+    </script>
+</body>
+</html>
