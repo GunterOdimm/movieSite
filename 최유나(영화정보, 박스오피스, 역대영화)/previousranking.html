@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Previous Movie Ranking Web</title>
+    <!-- Bootstrap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/boxoffice.css" />
+    <link rel="stylesheet" type="text/css" href="css/previousranking.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="container">
+		<!-- 상단 메뉴바 -->
+		<div class="header"></div>
+		<hr />
+		
+
+		<!-- 본문영역 -->
+		<div class="content">
+			<!-- PREVIOUS MOVIE RANKING 제목 -->
+        	<h1>PREVIOUS MOVIE RANKING(TOP10)</h1>
+
+        	<!-- 순위별 thumbnail -->
+        	<ul id="thumbnail">
+
+        		<!-- 영화차트 cnt1 -->
+        		<li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-1.png" class="img-thumbnail" alt="img1-1"></span>
+        				<div><img src="img/medal.png" id="prize" /></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>명량</b><br>개봉 2014.07.30<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>		
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 명량
+		                    </li>
+		                    <li>
+		                      평점: 8.87
+		                    </li>
+		                    <li>
+		                      감독: 김한민
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                   		<!-- 영화정보 더보기 버튼
+		                     	<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#movie_detail">더보기></button>
+								-->
+								<span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li>
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt2 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-2.png" class="img-thumbnail" alt="img1-2"></span>
+        				<div class="rank"><strong>2</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>극한직업</b><br>개봉 2019.01.23<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 극한직업
+		                    </li>
+		                    <li>
+		                      평점: 9.20
+		                    </li>
+		                    <li>
+		                      감독: 이병헌
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <!--
+		                     <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#movie_detail">더보기></button>
+		                 	-->
+		                 	<span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt3 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-3.png" class="img-thumbnail" alt="img1-3"></span>
+        				<div class="rank"><strong>3</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>신과함께: 죄와 벌</b><br>개봉 2017.12.20<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 신과함께: 죄와 벌
+		                    </li>
+		                    <li>
+		                      평점: 8.73
+		                    </li>
+		                    <li>
+		                      감독: 김용화
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt4 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-4.png" class="img-thumbnail" alt="img1-4"></span>
+        				<div class="rank"><strong>4</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>국제시장</b><br>개봉 2014.12.17<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 국제시장
+		                    </li>
+		                    <li>
+		                      평점: 9.16
+		                    </li>
+		                    <li>
+		                      감독: 윤제균
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     	<span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt5 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-5.png" class="img-thumbnail" alt="img1-5"></span>
+        				<div class="rank"><strong>5</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>어벤져스: 엔드게임</b><br>개봉 2019.04.24<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 어벤져스: 엔드게임
+		                    </li>
+		                    <li>
+		                      평점: 9.50
+		                    </li>
+		                    <li>
+		                      감독: 안소니 루소, 조 루소
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt6 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-6.png" class="img-thumbnail" alt="img1-6"></span>
+        				<div class="rank"><strong>6</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>아바타</b><br>개봉 2009.12.17<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 아바타
+		                    </li>
+		                    <li>
+		                      평점: 9.07
+		                    </li>
+		                    <li>
+		                      감독: 제임스 카메론
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt7 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-7.png" class="img-thumbnail" alt="img1-7"></span>
+        				<div class="rank"><strong>7</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>베테랑</b><br>개봉 2015.08.05<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 베테랑
+		                    </li>
+		                    <li>
+		                      평점: 9.24
+		                    </li>
+		                    <li>
+		                      감독: 류승완
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt8 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-8.png" class="img-thumbnail" alt="img1-8"></span>
+        				<div class="rank"><strong>8</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>도둑들</b><br>개봉 2012.07.25<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 도둑들
+		                    </li>
+		                    <li>
+		                      평점: 7.61
+		                    </li>
+		                    <li>
+		                      감독: 최동훈
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt9 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-9.png" class="img-thumbnail" alt="img1-9"></span>
+        				<div class="rank"><strong>9</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>7번방의 선물</b><br>개봉 2013.01.23<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 7번방의 선물
+		                    </li>
+		                    <li>
+		                      평점: 8.83
+		                    </li>
+		                    <li>
+		                      감독: 이환경
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+
+        	    <!-- 영화차트 cnt10 -->
+        	    <li>
+        			<a href="javascript:void(0);">
+        				<span class="thumb"><img src="img/1-10.png" class="img-thumbnail" alt="img1-10"></span>
+        				<div class="rank"><strong>10</strong></div>
+
+        				<!-- 마우스 hover -->
+	               		<div class="overlay">
+	               			<div class="text"><b>암살</b><br>개봉 2015.07.22<br><i><b><span>누적 17,615,437명</span></b></i></div>
+	               			<div class="info">
+                  			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                 		 	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               				</div>
+	               		</div>
+	               		
+        			</a>
+
+               		<span class="movie-info">
+        				<ul>
+                    		<li>
+                          	  영화제목: 암살
+		                    </li>
+		                    <li>
+		                      평점: 9.10
+		                    </li>
+		                    <li>
+		                      감독: 최동훈
+		                    </li>
+		                    <li>
+		                       관객수: 17,615,437명
+		                    </li>
+		                    <li>
+		                    	<p class="ell">
+			                       줄거리: 1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선.<br>
+			                       무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐.
+		                   		</p>
+		                     <span class="story">
+									<a href="javascript:void(0);" data-toggle="popover" title="★SUMMARY★" data-content="1597년 임진왜란 6년, 
+									 오랜 전쟁으로 인해 혼란이 극에 달한 조선.
+									 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자
+									 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 
+									 
+									 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 
+									 그리고 12척의 배 뿐. 
+									 마지막 희망이었던 거북선마저 불타고
+									 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 
+									 
+									 330척에 달하는 왜군의 배가 속속 집결하고
+									 압도적인 수의 열세에 모두가 패배를 직감하는 순간,
+									 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…!
+									 
+									 12척의 조선 vs 330척의 왜군
+									 역사를 바꾼 위대한 전쟁이 시작된다!">더보기></a>
+								</span>
+		                    </li> 
+                  		</ul>
+        			</span>
+
+        	    </li>
+        	</ul>
+
+        	<!-- 영화정보 modal -->
+	        <div class="modal fade" id="movie_detail" role="dialog">
+	          <div class="modal-dialog" role="document">
+	            
+	            <!-- modal content -->
+	            <div class="modal-content">
+	              <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                <p>
+	                  <br>
+	                </p>
+	              </div>
+	              <div class="modal-body">
+	                <div class="left_wrap">
+	                  <img src="img/1.png" class="img-thumbnail" alt="img1" width="50" height="100">
+	                </div>
+	                <div class="right_wrap">
+	                  <div class="title">
+	                     <h2><span>라이온 킹</span></h2>
+	                     <p>The Lion King , </p>
+	                  </div>
+	                  <hr />
+
+	                  <div class="score">
+	                        <p>
+	                          <span class="col">★★★★☆</span>
+	                           평점<strong> 7.6</strong>
+	                        </p>  
+	                  </div>
+	                  <ul>
+	                    <li>
+	                          <strong>개봉일</strong>
+	                           : 2019.07.17
+	                        </li>
+	                        <li>
+	                          <strong>감독</strong>
+	                           : 존 파브로
+	                        </li>
+	                        <li>
+	                          <p>
+	                            <span class="el"><strong>출연진</strong>
+	                            : 도날드 글로버,&nbsp;비욘세 놀즈,&nbsp;제임스 얼 존스,&nbsp;치웨텔 에지오포,&nbsp;세스 로건,&nbsp;빌리 아이크너,&nbsp;알프리 우다드,&nbsp;존 카니
+	                            </span>
+	                            <a href="#actor" title="더보기" class="more">더보기></a>
+	                          </p>
+	                        </li>
+	                        <li>
+	                          <strong>장르</strong>
+	                           : 가족, 드라마, 어드벤처
+	                        </li>
+	                        <li>
+	                          <strong>등급</strong>
+	                           : 전체 관람가
+	                        </li>
+	                        <li>
+	                          <strong>러닝타임</strong>
+	                           : 118분
+	                        </li>
+	                        <li>
+	                          <strong>누적관객</strong>
+	                           : 848,525명
+	                    </li>
+	                  </ul>
+	                </div>
+	                <hr />
+	                <div>
+	                  <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#like">좋아요♥︎</button>
+	                </div>
+	                <div class="read">
+	                  <h3><b>줄거리</b></h3>
+	                  <p>
+	                    <br>
+	                    <b>새로운 세상, 너의 시대가 올 것이다!</b><br>
+	                    <br>
+	                    어린 사자 '심바'는 프라이드 랜드의 왕인 아버지 '무파사'를<br>
+	                    야심과 욕망이 가득한 삼촌 '스카'의 음모로 읽고 왕국에서도 쫓겨난다.<br>
+	                    <br>
+	                    기억해라! 네가 누군지.<br>
+	                    <br>
+	                    진정한 자신의 모습을 찾아 위대하고도 험난한 도전을 떠나게 되는데...                   
+	                  </p>
+	                </div>
+	                <hr />
+	                
+	                <div id="actor">
+	                  <h3><b>출연진</b></h3>
+	                  <ul>
+	                    <li>
+	                      <img src="img/13.png">
+	                      <div class="text" alt="img13" width="50" height="50">
+	                        도날드 글로버
+	                      </div>
+	                    </li>
+	                    <li>
+	                      <img src="img/14.png">
+	                      <div class="text" alt="img14" width="50" height="50">
+	                        비욘세 놀즈
+	                      </div>
+	                    </li>
+	                    <li>
+	                      <img src="img/15.png">
+	                      <div class="text" alt="img15" width="50" height="50">
+	                        제임스 얼 존스
+	                      </div>
+	                    </li>
+	                    <li>
+	                      <img src="img/16.png">
+	                      <div class="text" alt="img16" width="50" height="50">
+	                        치웨텔 에지오포
+	                      </div>
+	                    </li>
+	                    <li>
+	                      <img src="img/17.png">
+	                      <div class="text" alt="img17" width="50" height="50">
+	                        세스 로건
+	                      </div>
+	                    </li>
+	                    <li>
+	                      <img src="img/18.png">
+	                      <div class="text" alt="img17" width="50" height="50">
+	                        빌리 아이크너
+	                      </div>
+	                    </li>
+	                    <li>
+	                      <img src="img/19.png">
+	                      <div class="text" alt="img17" width="50" height="50">
+	                        알프리 우다드
+	                      </div>
+	                    </li>
+	                  </ul>
+	                </div>
+
+	              </div>
+	              <div class="modal-footer">
+	                <button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+	                
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+        	<!-- 좋아요 modal -->
+	        <div class="modal fade" id="like" role="dialog">
+	          <div class="modal-dialog" role="document">
+	            
+	            <!-- modal content -->
+	            <div class="modal-content">
+	              <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                <h5 class="modal-title">좋아요♥︎를 누르셨습니다.</h5>
+	              </div>
+	              <div class="modal-body text-center">
+	                <p>마이페이지에 담겼습니다.<br>페이지에서 확인하시겠습니까?</p>
+	              </div>
+	              <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+	                <button type="button" class="btn btn-primary" onclick="document.location.href='mypage.html';">YES</button>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+
+		</div>
+		
+		<!-- mouse pointer -->
+		<a href="#" id="move"><img src="img/scroll.png" /></a>
+
+		<hr />
+
+		<!-- footer영역 -->
+		<div class="footer"></div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+	-->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed
+    <script src="https://code.jquery.com/jquery-3.3.2.min.js"></script>
+	-->
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	$('[data-toggle="popover"]').popover();   
+	});
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#move').fadeIn();
+            } else {
+                $('#move').fadeOut();
+            }
+        });
+        
+        $("#move").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+    </script>
+</body>
+</html>

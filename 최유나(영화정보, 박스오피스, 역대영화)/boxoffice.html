@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Boxoffice Web</title>
+
+    <!-- Bootstrap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/boxoffice.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <!-- 상단 메뉴바 -->
+      <div id="header"></div>
+
+      <hr />
+
+      <!-- 본문영역 -->
+      <div class="content">
+        <!-- BOX OFFICE 제목 -->
+        <h1>BOX OFFICE</h1>
+
+        <div id="js-load" class="row">
+
+          <!-- 영화차트 cnt1 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/1.png" class="img-thumbnail" alt="img1" width="304" height="220">
+               <div><img src="img/first.png" id="prize" /></div>
+               <div class="overlay">
+                 <div class="text"><b>라이온 킹</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt2 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/2.png" class="img-thumbnail" alt="img2" width="304" height="220">
+               <div><img src="img/second.png" id="prize" /></div>
+               <div class="overlay">
+                 <div class="text"><b>스파이더맨</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+         
+          <!-- 영화차트 cnt3 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/3.png" class="img-thumbnail" alt="img3" width="304" height="220">
+               <div><img src="img/third.png" id="prize" /></div>
+               <div class="overlay">
+                 <div class="text"><b>알라딘</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt4 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/4.png" class="img-thumbnail" alt="img4" width="304" height="220">
+               <div class="rank"><strong>예정작</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>사자</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt5 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/5.png" class="img-thumbnail" alt="img5" width="304" height="220">
+               <div class="rank"><strong>예정작</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>나랏말싸미</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt6 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/6.png" class="img-thumbnail" alt="img6" width="304" height="220">
+               <div class="rank"><strong>6</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>토이스토리4</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt7 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/7.png" class="img-thumbnail" alt="img7" width="304" height="220">
+               <div class="rank"><strong>7</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>사일런스</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt8 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/8.png" class="img-thumbnail" alt="img8" width="304" height="220">
+               <div class="rank"><strong>8</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>기생충</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt9 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/9.png" class="img-thumbnail" alt="img9" width="304" height="220">
+               <div class="rank"><strong>9</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>미드소마</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt10 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/10.png" class="img-thumbnail" alt="img10" width="304" height="220">
+               <div class="rank"><strong>10</strong></div>
+               <div class="overlay">
+                 <div class="text"><b>기방도령</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default">영화정보</button>
+                  <button type="button" class="btn btn-default">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt11 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/11.png" class="img-thumbnail" alt="img11" width="304" height="220">
+               <div class="overlay">
+                 <div class="text"><b>존윅3</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+
+          <!-- 영화차트 cnt12 -->
+          <div class="col-sm-5 col-md-3">
+            <div class="thumbnail">
+               <img src="img/12.png" class="img-thumbnail" alt="img12" width="304" height="220">
+               <div class="overlay">
+                 <div class="text"><b>어벤져스: 엔드게임</b><br><span>★★★★☆</span><i>평점7.6</i></div>
+               </div>
+               <div class="info">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#movie_detail">영화정보</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#like">좋아요♥︎</button>    
+               </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- 더보기 버튼 -->
+        <div id="js-btn-wrap">
+           <button type="button" class="btn btn-default btn-lg btn-block" id="moreMovieList">더보기 +</button>
+        </div>
+        
+
+        <!-- 영화정보 modal -->
+        <div class="modal fade" id="movie_detail" role="dialog">
+          <div class="modal-dialog" role="document">
+            
+            <!-- modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <p>
+                  <br>
+                </p>
+              </div>
+              <div class="modal-body">
+                <div class="left_wrap">
+                  <img src="img/1.png" class="img-thumbnail" alt="img1" width="50" height="100">
+                </div>
+                <div class="right_wrap">
+                  <div class="title">
+                     <h2><span>라이온 킹</span></h2>
+                     <p>The Lion King , </p>
+                  </div>
+                  <hr />
+
+                  <div class="score">
+                        <p>
+                          <span class="col">★★★★☆</span>
+                           평점<strong> 7.6</strong>
+                        </p>  
+                  </div>
+                  <ul>
+                    <li>
+                          <strong>개봉일</strong>
+                           : 2019.07.17
+                        </li>
+                        <li>
+                          <strong>감독</strong>
+                           : 존 파브로
+                        </li>
+                        <li>
+                          <p>
+                            <span class="el"><strong>출연진</strong>
+                            : 도날드 글로버,&nbsp;비욘세 놀즈,&nbsp;제임스 얼 존스,&nbsp;치웨텔 에지오포,&nbsp;세스 로건,&nbsp;빌리 아이크너,&nbsp;알프리 우다드,&nbsp;존 카니
+                            </span>
+                            <a href="#actor" title="더보기" class="more">더보기></a>
+                          </p>
+                        </li>
+                        <li>
+                          <strong>장르</strong>
+                           : 가족, 드라마, 어드벤처
+                        </li>
+                        <li>
+                          <strong>등급</strong>
+                           : 전체 관람가
+                        </li>
+                        <li>
+                          <strong>러닝타임</strong>
+                           : 118분
+                        </li>
+                        <li>
+                          <strong>누적관객</strong>
+                           : 848,525명
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+                <div>
+                  <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#like">좋아요♥︎</button>
+                </div>
+                <div class="read">
+                  <h3><b>줄거리</b></h3>
+                  <p>
+                    <br>
+                    <b>새로운 세상, 너의 시대가 올 것이다!</b><br>
+                    <br>
+                    어린 사자 '심바'는 프라이드 랜드의 왕인 아버지 '무파사'를<br>
+                    야심과 욕망이 가득한 삼촌 '스카'의 음모로 읽고 왕국에서도 쫓겨난다.<br>
+                    <br>
+                    기억해라! 네가 누군지.<br>
+                    <br>
+                    진정한 자신의 모습을 찾아 위대하고도 험난한 도전을 떠나게 되는데...                   
+                  </p>
+                </div>
+                <hr />
+                
+                <div id="actor">
+                  <h3><b>출연진</b></h3>
+                  <ul>
+                    <li>
+                      <img src="img/13.png">
+                      <div class="text" alt="img13" width="50" height="50">
+                        도날드 글로버
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/14.png">
+                      <div class="text" alt="img14" width="50" height="50">
+                        비욘세 놀즈
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/15.png">
+                      <div class="text" alt="img15" width="50" height="50">
+                        제임스 얼 존스
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/16.png">
+                      <div class="text" alt="img16" width="50" height="50">
+                        치웨텔 에지오포
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/17.png">
+                      <div class="text" alt="img17" width="50" height="50">
+                        세스 로건
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/18.png">
+                      <div class="text" alt="img17" width="50" height="50">
+                        빌리 아이크너
+                      </div>
+                    </li>
+                    <li>
+                      <img src="img/19.png">
+                      <div class="text" alt="img17" width="50" height="50">
+                        알프리 우다드
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- 좋아요 modal -->
+        <div class="modal fade" id="like" role="dialog">
+          <div class="modal-dialog" role="document">
+            
+            <!-- modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">좋아요♥︎를 누르셨습니다.</h5>
+              </div>
+              <div class="modal-body text-center">
+                <p>마이페이지에 담겼습니다.<br>페이지에서 확인하시겠습니까?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+                <button type="button" class="btn btn-primary" onclick="document.location.href='mypage.html';">YES</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- mouse pointer -->
+      <a href="#" id="move"><img src="img/scroll.png" /></a>
+
+      <hr />
+
+      <!-- footer영역 -->
+      <div id="footer"></div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!--
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    -->
+    <!-- Include all compiled plugins (below), or include individual files as needed
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    -->
+
+    <script type="text/javascript">
+      $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#move').fadeIn();
+            } else {
+                $('#move').fadeOut();
+            }
+        });
+        
+        $("#move").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+    </script>
+  </body>
+</html>
+

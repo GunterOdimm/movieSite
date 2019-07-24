@@ -1,0 +1,153 @@
+.container {
+	background-color: #1c1c1c;
+	width: 100%;
+	height: 100%;
+}
+
+.content { 
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.content h1 {
+	width: auto;
+	height: 30px;
+	margin: 30px;
+	font-size: 35px;
+	color: #7d7d7d;
+	text-align: center;
+}
+
+ul, li {
+	list-style: none;
+}
+
+#thumbnail li a {
+	border-bottom: 1px dotted #eee;
+	margin: 10px;
+	left: 20px;
+	text-decoration: none;
+}
+
+#thumbnail li a:last-child {
+	border-bottom: 0;
+}
+
+#thumbnail li {
+	display: block;
+	width: auto;
+	padding: 5px;
+	text-decoration: none;
+}
+
+#thumbnail li span {
+	color: #eee;
+	text-align: left;
+}
+
+#thumbnail li a .thumb {
+	width: 20%;
+	height: 25%;
+	display: block;
+}
+
+#thumbnail a #prize {
+	position: absolute;
+	top: 30px;
+	left: 3px;
+	width: 60px;
+	height: 60px;
+	line-height: 50px;
+}
+
+#thumbnail .thumb img {
+	width: 100%;
+	height: 100%;
+}
+
+#thumbnail .movie-info {
+	display: block;
+	width: 70%;
+	min-height: 50%;
+	position: absolute;
+	font-size: 25px;
+	right: 30px;
+	top: 55px;
+}
+
+#thumbnail .movie-info .ell {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#thumbnail .movie-info .story {
+	color: #000000;
+	text-align: left;
+}
+
+#thumbnail .movie-info .story .popover {
+	min-width: 600px;
+}
+
+#thumbnail li {
+	display: block;
+	width: auto;
+	padding: 5px;
+	color: #eee;
+	position: relative;
+}
+
+* {box-sizing: border-box;}
+
+.overlay {
+  position: absolute; 
+  left: 6px;
+  right: 0;
+  bottom: 15%; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 20%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+li a:hover .overlay {
+  opacity: 1;
+}
+
+#thumbnail .overlay .text span {
+	color: #fcdf05;
+}
+
+#thumbnail .rank {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #53b5a0;
+	text-align: center;
+}
+
+#thumbnail .rank strong {
+	color: #fff;
+}
+
+a#move {
+	position: fixed;
+	right: 3px;
+	bottom: 20px;
+	cursor: pointer;
+	color: #53b5a0;
+	display: none;
+	z-index: 99999;
+}
