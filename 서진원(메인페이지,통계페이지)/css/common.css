@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 
 * {
@@ -37,4 +38,45 @@
     content: '';
     display: block;
     clear: both;
+=======
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+>>>>>>> 394d6ee2c5a6db4bf30eef95a9b1651322b361d7
 }
