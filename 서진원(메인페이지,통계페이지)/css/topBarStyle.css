@@ -1,0 +1,77 @@
+/* #title{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+
+#title a {
+    text-decoration: none !important;
+    max-width: 200px;
+}
+
+#header h1 {
+    height: 100px;
+    font-size: 25px;
+}
+
+#header li {
+    margin:0 !important;
+    이 코드 건드릴 사람은 서진원한테 전화할것
+
+    height: 40px;
+    float: left;
+    text-align: center;
+    background-color: #ffffff;
+    width: 16.5%;
+    border-right: 1px dotted #cccccc;
+
+}
+ */
+ @charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#header h1 {
+
+    height: 100px;
+    font-size: 25px;
+    background-color: rgb(17, 17, 17);
+    margin:0 !important;
+    /* 이 코드 건드릴 사람은 서진원한테 전화할것 */
+    /* 상단 타이틀바 관련 css */
+}
+
+#header li {
+
+    height: 40px;
+    float: left;
+    text-align: center;
+    /* background-color: #ffffff; */
+    width: 16.5%;
+    /*border-right: 1px dotted #cccccc; */
+    /* 상단 타이틀바 관련 css */
+
+}
+
+.sub1{
+    position: absolute;
+    z-index: 1000;
+    height: 200px;
+    display: none;
+    background-color: rgb(26, 188, 156,0.5);
+    margin-top: 71px;
+    width: 100%;
+    /* 상단 타이틀바 css */
+}
